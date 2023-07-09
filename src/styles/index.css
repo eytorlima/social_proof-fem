@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#first-card {
+    flex-wrap: wrap;
+    width: 1200px;
+    height: fit-content;
+    display: flex;
+    margin: 150px auto 0px auto;
+}
+
+#texts-section {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    width: 350px;
+}
+
+#first-text {
+    margin-top: 30px;
+    width: 480px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(303, 10%, 53%);
+}
+
+#rate {
+    margin-left: auto;
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rated {
+    margin-top: 20px;
+    width: 480px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    align-items: center;
+    color: hsl(300, 43%, 22%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+#r2 {
+    margin-left: 45px;
+}
+
+#r3 {
+    margin-left: 90px;
+}
+
+.rated img {
+    margin-left: 10px;
+}
+
+.rated span {
+    margin-left: 40px;
+}
+
+#second-card {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.card {
+    border-radius: 8px;
+    width: 380px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    color: white;
+    background-color: hsl(300, 43%, 22%);
+}
+
+#c2 {
+    margin-top: 20px;
+}
+
+#c3 {
+    margin-top: 40px;
+}
+
+.fnv {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    margin: 40px 0px 0px 40px;
+}
+
+.fnv img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2rem;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.verify {
+    color: hsl(333, 80%, 67%);
+}
+
+.text {
+    margin: 30px 0px 0px 40px;
+    width: 285px;
+    line-height: 1.3rem;
+    font-weight: 500;
+    color: hsl(300, 24%, 96%);
+}
+
+@media (max-width: 800px) {
+    #first-card {
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+        margin: 30px auto;
+    }
+
+    #texts-section {
+        margin: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #title {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #first-text {
+        width: 90%;
+        margin: 30px auto 20px auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #rate {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .rated {
+        width: 80%;
+        height: 70px;
+        padding: 0px;
+        margin: 0px auto 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .rated span {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #r2, #r3 {
+        margin: 20px auto 0px auto
+    }
+
+    #second-card {
+        width: 90%;
+        margin: 30px auto;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px auto;
+        height: fit-content;
+    }
+
+    .text {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    #c2, #c3 {
+        margin-top: 0px;
+    }
+}
